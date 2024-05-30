@@ -40,3 +40,11 @@ keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available 
 
 -- LazyGit
 keymap.set("n", "<leader>lg", ":LazyGit<CR>")
+
+-- Copilot Chat
+keymap.set("n", "<leader>cco", ":CopilotChatOpen<CR>")
+keymap.set("n", "<leader>ccc", ":CopilotChatClose<CR>")
+keymap.set("n", "<leader>ccr", ":CopilotChatReset<CR>")
+
+keymap.set("v", "<leader>cx", ":CopilotChatExplain<CR>")
+keymap.set("v", "<leader>cr", ":CopilotChatReview<CR>")

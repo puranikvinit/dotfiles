@@ -112,21 +112,7 @@ return packer.startup(function(use)
 		},
 	})
 
-	-- github copilot for nvim
 	use("github/copilot.vim")
-
-	-- github copilot chat for nvim
-	use({
-		"CopilotC-Nvim/CopilotChat.nvim",
-		branch = "canary",
-		dependencies = {
-			{ "github/copilot.vim" },
-			{ "nvim-lua/plenary.nvim" },
-		},
-		opts = {
-			debug = true,
-		},
-	})
 
 	if packer_bootstrap then
 		require("packer").sync()

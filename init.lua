@@ -18,3 +18,5 @@ require("kvp_933.plugins.lsp.mason")
 require("kvp_933.plugins.lsp.lspsaga")
 require("kvp_933.plugins.lsp.lsp-config")
 require("kvp_933.plugins.lsp.null-ls")
+
+require("kvp_933.plugins.copilot-chat")
