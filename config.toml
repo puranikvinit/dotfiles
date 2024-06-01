@@ -1,0 +1,4 @@
+# Neovide configuration file
+
+frame = "buttonless"
+title-hidden = true
