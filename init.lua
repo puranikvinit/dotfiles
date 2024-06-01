@@ -1,6 +1,7 @@
 require("kvp_933.core.options")
 require("kvp_933.core.keymaps")
 require("kvp_933.core.colorscheme")
+require("kvp_933.core.neovide")
 
 require("kvp_933.plugins-setup")
 
