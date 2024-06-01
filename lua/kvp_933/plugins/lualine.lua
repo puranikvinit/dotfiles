@@ -14,14 +14,17 @@ local new_colors = {
 }
 
 -- colors for the status bar in each mode
-lualine_nightfly.normal.a.bg = new_colors.blue
-lualine_nightfly.insert.a.bg = new_colors.green
-lualine_nightfly.visual.a.bg = new_colors.violet
+lualine_nightfly.normal.a.fg = new_colors.green
+
+lualine_nightfly.insert.a.fg = new_colors.green
+
+lualine_nightfly.visual.a.fg = new_colors.green
+
 lualine_nightfly.command = {
 	a = {
 		gui = "bold",
-		bg = new_colors.yellow,
-		fg = new_colors.black,
+		bg = new_colors.transparent,
+		fg = new_colors.green,
 	},
 }
 
