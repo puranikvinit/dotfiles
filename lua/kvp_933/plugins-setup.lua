@@ -128,6 +128,9 @@ return packer.startup(function(use)
 		},
 	})
 
+	-- floating terminal inside nvim instance
+	use("voldikss/vim-floaterm")
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end

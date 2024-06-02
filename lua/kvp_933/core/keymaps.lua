@@ -48,3 +48,7 @@ keymap.set("n", "<leader>ccr", ":CopilotChatReset<CR>")
 
 keymap.set("v", "<leader>cx", ":CopilotChatExplain<CR>")
 keymap.set("v", "<leader>cr", ":CopilotChatReview<CR>")
+
+-- Floaterm
+keymap.set("n", "<leader>tn", ":FloatermNew<CR>")
+keymap.set("n", "<leader>tt", ":FloatermToggle<CR>")
