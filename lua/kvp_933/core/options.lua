@@ -5,8 +5,8 @@ opt.relativenumber = true
 opt.number = true
 
 -- tabs and indentation
-opt.tabstop = 4
-opt.shiftwidth = 4
+opt.tabstop = 2
+opt.shiftwidth = 2
 opt.expandtab = true
 opt.autoindent = true
 
@@ -37,3 +37,5 @@ opt.splitbelow = true
 
 -- to consider '-' spaced keywords as a single word
 opt.iskeyword:append("-")
+
+opt.cmdheight = 0

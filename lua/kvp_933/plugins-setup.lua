@@ -131,6 +131,13 @@ return packer.startup(function(use)
 	-- floating terminal inside nvim instance
 	use("voldikss/vim-floaterm")
 
+	-- floating command line for nvim
+	use({
+		"VonHeikemen/fine-cmdline.nvim",
+		requires = {
+			{ "MunifTanjim/nui.nvim" },
+		},
+	})
 	if packer_bootstrap then
 		require("packer").sync()
 	end

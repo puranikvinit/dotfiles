@@ -52,3 +52,6 @@ keymap.set("v", "<leader>cr", ":CopilotChatReview<CR>")
 -- Floaterm
 keymap.set("n", "<leader>tn", ":FloatermNew<CR>")
 keymap.set("n", "<leader>tt", ":FloatermToggle<CR>")
+
+-- Fine CmdLine
+keymap.set("n", ":", ":FineCmdline<CR>")
