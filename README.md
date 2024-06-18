@@ -1,4 +1,4 @@
-# My config dotfiles for my MacOS workflow
+# Config dotfiles for my MacOS workflow
 
 Host Machine: Macbook Air M1(2020); macOS Sonoma 14.5\
 Terminal Font used: MesloLGS Nerd Font Regular\
