@@ -1,5 +1,5 @@
 if vim.g.neovide then
-	vim.o.guifont = "FiraMono Nerd Font Mono:h15"
+	vim.o.guifont = "MesloLGS NF Regular:h15"
 
 	vim.g.neovide_cursor_vfx_enable = true
 	vim.g.neovide_cursor_vfx_inertia = 0.1

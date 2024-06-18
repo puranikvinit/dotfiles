@@ -12,7 +12,7 @@ nvimtree.setup({
 		icons = {
 			glyphs = {
 				folder = {
-					arrow_closed = "",
+					arrow_closed = "▶",
 					arrow_open = "",
 				},
 			},
