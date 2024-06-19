@@ -76,6 +76,7 @@ plugins=(
   zsh-syntax-highlighting
   fzf-tab
   themes
+  zsh-fzf-history-search
   )
 
 source $ZSH/oh-my-zsh.sh
@@ -83,6 +84,8 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
+
+export EDITOR="nvim"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -112,5 +115,6 @@ alias ohmyzsh="nvim ~/.oh-my-zsh"
 alias ls="ls -AG"
 
 alias kssh="kitty +kitten ssh"
+
 
 neofetch
