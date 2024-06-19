@@ -111,8 +111,10 @@ export EDITOR="nvim"
 # Example aliases
 alias zshconfig="nvim ~/.zshrc"
 alias ohmyzsh="nvim ~/.oh-my-zsh"
+alias configedit="nvim ~/.config"
 
-alias ls="ls -AG"
+alias ls="eza -lA --color=always --icons=always --sort=changed -r --git --total-size --octal-permissions --no-user --no-time"
+alias hls="\ls -AG"
 
 alias kssh="kitty +kitten ssh"
 
