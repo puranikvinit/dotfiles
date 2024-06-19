@@ -9,5 +9,5 @@ Window Tiling Manager -> loop: version 1.0.0 (1030)\
 Keyboard customizer -> karabiner: version 14.13.0\
 System Info script -> neofetch: version 7.1.0\
 Personal Development Environment -> nvim: version v0.10.0\
-GUI client for nvim -> neovide: version 0.13.1
-Terminal File Manafer -> ranger: version 1.9.3\
+GUI client for nvim -> neovide: version 0.13.1\
+Terminal File Manafer -> ranger: version 1.9.3
