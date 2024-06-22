@@ -21,3 +21,5 @@ require("kvp_933.plugins.lsp.lsp-config")
 require("kvp_933.plugins.lsp.null-ls")
 
 require("kvp_933.plugins.copilot-chat")
+
+require("kvp_933.plugins.harpoon")

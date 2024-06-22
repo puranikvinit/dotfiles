@@ -138,6 +138,15 @@ return packer.startup(function(use)
 			{ "MunifTanjim/nui.nvim" },
 		},
 	})
+
+	-- for quick file switching
+	use({
+		"ThePrimeagen/harpoon",
+		requires = {
+			{ "nvim-lua/plenary.nvim" },
+		},
+	})
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end
