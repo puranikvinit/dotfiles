@@ -11,6 +11,10 @@ keymap.set("n", "<leader>nh", ":nohl<CR>")
 -- delete single character without copying into register
 keymap.set("n", "x", '"_x')
 
+-- move lines up and down
+keymap.set("v", "K", ":m '<-2<CR>gv=gv") -- move selection up
+keymap.set("v", "J", ":m '>+1<CR>gv=gv") -- move selection down
+
 -- increment/decrement numbers
 keymap.set("n", "<leader>+", "<C-a>")
 keymap.set("n", "<leader>-", "<C-x>")
