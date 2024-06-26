@@ -131,11 +131,12 @@ return packer.startup(function(use)
 	-- floating terminal inside nvim instance
 	use("voldikss/vim-floaterm")
 
-	-- floating command line for nvim
+	-- floating command line
 	use({
-		"VonHeikemen/fine-cmdline.nvim",
+		"folke/noice.nvim",
 		requires = {
 			{ "MunifTanjim/nui.nvim" },
+			{ "rcarriga/nvim-notify" },
 		},
 	})
 
