@@ -23,4 +23,4 @@ telescope.setup({
 -- also install 'rg' and 'fzf' packages to get the Live Grep working!
 
 telescope.load_extension("fzf")
-telescope.load_extension("harpoon")
+-- telescope.load_extension("harpoon")

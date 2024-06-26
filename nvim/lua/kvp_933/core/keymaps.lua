@@ -58,11 +58,11 @@ keymap.set("n", "<leader>tn", ":FloatermNew<CR>")
 keymap.set("n", "<leader>tt", ":FloatermToggle<CR>")
 
 -- Fine CmdLine
-keymap.set("n", ":", ":FineCmdline<CR>")
+-- keymap.set("n", ":", ":FineCmdline<CR>")
 
 -- Harpoon
 keymap.set("n", "hx", require("harpoon.mark").add_file)
--- keymap.set("n", "hh", require("harpoon.ui").toggle_quick_menu)
-keymap.set("n", "hh", ":Telescope harpoon marks<CR>")
+keymap.set("n", "hh", require("harpoon.ui").toggle_quick_menu)
+-- keymap.set("n", "hh", ":Telescope harpoon marks<CR>")
 keymap.set("n", "hn", require("harpoon.ui").nav_next)
 keymap.set("n", "hp", require("harpoon.ui").nav_prev)
