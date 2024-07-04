@@ -24,6 +24,14 @@ if not status then
 	return
 end
 
+packer.init({
+	display = {
+		open_fn = function()
+			return require("packer.util").float({ relative = "editor", height = 10, row = vim.o.lines - 15 })
+		end,
+	},
+})
+
 return packer.startup(function(use)
 	-- packer
 	use("wbthomason/packer.nvim")
