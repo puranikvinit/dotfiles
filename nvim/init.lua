@@ -29,3 +29,4 @@ require("kvp_933.plugins.harpoon")
 
 require("kvp_933.plugins.noice")
 require("kvp_933.plugins.notify")
+require("kvp_933.plugins.markdown")

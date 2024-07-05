@@ -56,3 +56,7 @@ keymap.set("n", "hx", require("harpoon.mark").add_file)
 keymap.set("n", "hh", require("harpoon.ui").toggle_quick_menu)
 keymap.set("n", "hn", require("harpoon.ui").nav_next)
 keymap.set("n", "hp", require("harpoon.ui").nav_prev)
+-- Markdown
+keymap.set("n", "<leader>rm", ":RenderMarkdownToggle<CR>")
+keymap.set("n", "<leader>mp", ":MarkdownPreview<CR>")
+keymap.set("n", "<leader>ms", ":MarkdownPreviewStop<CR>")

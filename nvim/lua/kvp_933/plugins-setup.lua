@@ -144,6 +144,25 @@ return packer.startup(function(use)
 		},
 	})
 
+	-- for markdown preview
+	use({
+		"MeanderingProgrammer/markdown.nvim",
+		as = "render-markdown",
+		requires = {
+			{ "nvim-treesitter" },
+			{ "nvim-tree/nvim-web-devicons", opt = true },
+		},
+	})
+
+	use({
+		"iamcco/markdown-preview.nvim",
+		run = "cd app && npm install",
+		setup = function()
+			vim.g.mkdp_filetypes = { "markdown" }
+		end,
+		ft = { "markdown" },
+	})
+
 	use("nvimdev/dashboard-nvim")
 
 	if packer_bootstrap then
