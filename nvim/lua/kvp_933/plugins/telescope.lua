@@ -8,8 +8,16 @@ if not actions_setup then
 	return
 end
 
+local themes_setup, themes = pcall(require, "telescope.themes")
+if not themes_setup then
+	return
+end
+
 telescope.setup({
-	defaults = {
+	defaults = themes.get_dropdown({
+		selection_caret = " ❯ ",
+		prompt_prefix = " ❯ ",
+		winblend = 20,
 		mappings = {
 			i = {
 				["<C-k>"] = actions.move_selection_previous, -- move to prev result
@@ -17,7 +25,7 @@ telescope.setup({
 				["<C-q>"] = actions.send_selected_to_qflist + actions.open_qflist, -- send selected to quickfixlist
 			},
 		},
-	},
+	}),
 })
 
 -- also install 'rg' and 'fzf' packages to get the Live Grep working!
