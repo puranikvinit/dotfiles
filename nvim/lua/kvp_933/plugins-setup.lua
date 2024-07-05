@@ -59,6 +59,7 @@ return packer.startup(function(use)
 
 	-- file explorer
 	use("nvim-tree/nvim-tree.lua")
+	use({ "nvim-tree/nvim-tree.lua", lazy = false })
 
 	-- icons for nvim-tree
 	use("nvim-tree/nvim-web-devicons")
