@@ -105,6 +105,9 @@ return packer.startup(function(use)
 	use("windwp/nvim-autopairs")
 	use("windwp/nvim-ts-autotag")
 
+	-- git plugin
+	use("tpope/vim-fugitive")
+
 	-- for showing git diff signs
 	use("lewis6991/gitsigns.nvim")
 

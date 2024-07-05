@@ -15,6 +15,7 @@ require("kvp_933.plugins.nvim-cmp")
 
 require("kvp_933.plugins.autopairs")
 require("kvp_933.plugins.treesitter")
+require("kvp_933.plugins.fugitive")
 require("kvp_933.plugins.gitsigns")
 
 require("kvp_933.plugins.lsp.mason")

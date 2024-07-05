@@ -36,6 +36,12 @@ keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>") -- find string u
 keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>") -- list open buffers in current neovim instance
 keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available help tags
 
+-- Fugitive
+keymap.set("n", "<leader>gs", ":Git<CR>")
+keymap.set("n", "<leader>gP", ":Git push<CR>")
+
+keymap.set("n", "<leader>gh", "<cmd>diffget //2<CR>")
+keymap.set("n", "<leader>gl", "<cmd>diffget //3<CR>")
 
 -- Copilot Chat
 keymap.set("n", "<leader>cco", ":CopilotChatOpen<CR>")
