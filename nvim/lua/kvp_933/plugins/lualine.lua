@@ -80,7 +80,8 @@ end
 
 ins_left({
 	function()
-		return "▊"
+		-- return "▊"
+		return " "
 	end,
 	color = { fg = colors.blue }, -- Sets highlighting of component
 	padding = { left = 0, right = 1 }, -- We don't need space before this
@@ -89,7 +90,29 @@ ins_left({
 ins_left({
 	-- mode component
 	function()
-		return string.upper(vim.fn.mode())
+		local mode_alias = {
+			n = "NORMAL",
+			i = "INSERT",
+			v = "VISUAL",
+			[""] = "V-BLOCK",
+			V = "V-LINE",
+			c = "COMMAND",
+			no = "OPERATOR-PENDING",
+			s = "SELECT",
+			S = "S-LINE",
+			[""] = "S-BLOCK",
+			ic = "I-COMPLETION",
+			R = "REPLACE",
+			Rv = "V-REPLACE",
+			cv = "VIM-EX",
+			ce = "NORMAL-EX",
+			r = "PROMPT",
+			rm = "MORE",
+			["r?"] = "CONFIRM",
+			["!"] = "SHELL",
+			t = "TERMINAL",
+		}
+		return string.upper(mode_alias[vim.fn.mode()])
 	end,
 	color = function()
 		-- auto change color according to neovims mode
@@ -175,7 +198,12 @@ ins_left({
 	cond = conditions.buffer_not_empty,
 	color = { fg = colors.magenta, gui = "bold" },
 })
-ins_left({ "location", color = { fg = colors.fg, gui = "bold" } })
+
+ins_left({
+	"location",
+	color = { fg = colors.fg, gui = "bold" },
+	cond = conditions.hide_in_width,
+})
 
 -- Add components to right sections
 -- ins_right({
@@ -224,7 +252,8 @@ ins_right({
 
 ins_right({
 	function()
-		return "▊"
+		-- return "▊"
+		return " "
 	end,
 	color = { fg = colors.blue },
 	padding = { left = 1 },
