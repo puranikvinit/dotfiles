@@ -2,8 +2,6 @@ vim.g.mapleader = " "
 
 local keymap = vim.keymap
 
--- general keymaps
-keymap.set("i", "jk", "<ESC>")
 
 -- clear search highlights
 keymap.set("n", "<leader>nh", ":nohl<CR>")
@@ -14,10 +12,6 @@ keymap.set("n", "x", '"_x')
 -- move lines up and down
 keymap.set("v", "K", ":m '<-2<CR>gv=gv") -- move selection up
 keymap.set("v", "J", ":m '>+1<CR>gv=gv") -- move selection down
-
--- increment/decrement numbers
-keymap.set("n", "<leader>+", "<C-a>")
-keymap.set("n", "<leader>-", "<C-x>")
 
 -- window management
 keymap.set("n", "<leader>sv", "<C-w>v") -- split window vertically
@@ -42,8 +36,6 @@ keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>") -- find string u
 keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>") -- list open buffers in current neovim instance
 keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available help tags
 
--- LazyGit
-keymap.set("n", "<leader>lg", ":LazyGit<CR>")
 
 -- Copilot Chat
 keymap.set("n", "<leader>cco", ":CopilotChatOpen<CR>")
@@ -53,16 +45,8 @@ keymap.set("n", "<leader>ccr", ":CopilotChatReset<CR>")
 keymap.set("v", "<leader>cx", ":CopilotChatExplain<CR>")
 keymap.set("v", "<leader>cr", ":CopilotChatReview<CR>")
 
--- Floaterm
-keymap.set("n", "<leader>tn", ":FloatermNew<CR>")
-keymap.set("n", "<leader>tt", ":FloatermToggle<CR>")
-
--- Fine CmdLine
--- keymap.set("n", ":", ":FineCmdline<CR>")
-
 -- Harpoon
 keymap.set("n", "hx", require("harpoon.mark").add_file)
 keymap.set("n", "hh", require("harpoon.ui").toggle_quick_menu)
--- keymap.set("n", "hh", ":Telescope harpoon marks<CR>")
 keymap.set("n", "hn", require("harpoon.ui").nav_next)
 keymap.set("n", "hp", require("harpoon.ui").nav_prev)

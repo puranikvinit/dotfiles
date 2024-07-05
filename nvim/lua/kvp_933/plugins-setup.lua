@@ -40,8 +40,6 @@ return packer.startup(function(use)
 	use("bluz71/vim-nightfly-guicolors")
 	use("xiyaowong/transparent.nvim")
 
-	-- tmux and split window navigation
-	use("christoomey/vim-tmux-navigator")
 	use("puranikvinit/tokyonight.nvim")
 
 	-- used by telescope and tree plugins
@@ -52,13 +50,11 @@ return packer.startup(function(use)
 
 	-- essential plugins
 	use("tpope/vim-surround")
-	use("vim-scripts/ReplaceWithRegister")
 
 	-- for easier commenting of code
 	use("numToStr/Comment.nvim")
 
 	-- file explorer
-	use("nvim-tree/nvim-tree.lua")
 	use({ "nvim-tree/nvim-tree.lua", lazy = false })
 
 	-- icons for nvim-tree
@@ -112,15 +108,6 @@ return packer.startup(function(use)
 	-- for showing git diff signs
 	use("lewis6991/gitsigns.nvim")
 
-	-- lazygit plugin for nvim
-	use({
-		"kdheepak/lazygit.nvim",
-		-- optional for floating window border decoration
-		requires = {
-			"nvim-lua/plenary.nvim",
-		},
-	})
-
 	-- github copilot for nvim
 	use("github/copilot.vim")
 
@@ -136,9 +123,6 @@ return packer.startup(function(use)
 			debug = true,
 		},
 	})
-
-	-- floating terminal inside nvim instance
-	use("voldikss/vim-floaterm")
 
 	-- floating command line
 	use({
