@@ -141,6 +141,8 @@ return packer.startup(function(use)
 		},
 	})
 
+	use("nvimdev/dashboard-nvim")
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end

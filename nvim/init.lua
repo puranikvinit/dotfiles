@@ -5,6 +5,8 @@ require("kvp_933.core.neovide")
 
 require("kvp_933.plugins-setup")
 
+require("kvp_933.plugins.dashboard")
+
 require("kvp_933.plugins.comment")
 require("kvp_933.plugins.nvim-tree")
 require("kvp_933.plugins.lualine")
