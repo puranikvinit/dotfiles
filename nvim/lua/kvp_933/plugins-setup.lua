@@ -39,10 +39,10 @@ return packer.startup(function(use)
 	-- colorchemes
 	use("bluz71/vim-nightfly-guicolors")
 	use("xiyaowong/transparent.nvim")
-	use("folke/tokyonight.nvim")
 
 	-- tmux and split window navigation
 	use("christoomey/vim-tmux-navigator")
+	use("puranikvinit/tokyonight.nvim")
 
 	-- used by telescope and tree plugins
 	use("nvim-lua/plenary.nvim")
