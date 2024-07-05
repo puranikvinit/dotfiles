@@ -39,7 +39,6 @@ return packer.startup(function(use)
 	-- colorchemes
 	use("bluz71/vim-nightfly-guicolors")
 	use("xiyaowong/transparent.nvim")
-
 	use("puranikvinit/tokyonight.nvim")
 
 	-- used by telescope and tree plugins
@@ -162,6 +161,8 @@ return packer.startup(function(use)
 		end,
 		ft = { "markdown" },
 	})
+
+	use("norcalli/nvim-colorizer.lua")
 
 	use("nvimdev/dashboard-nvim")
 
