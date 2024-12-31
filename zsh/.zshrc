@@ -119,6 +119,6 @@ alias ls="eza -lA --color=always --icons=always --sort=changed -r --git --total-
 alias hls="\ls -AG ~"
 
 alias kssh="kitty +kitten ssh"
-
+alias gssh="TERM=xterm ssh"
 
 neofetch

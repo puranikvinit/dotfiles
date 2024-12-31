@@ -1,0 +1,32 @@
+font-family = "JetBrainsMono Nerd Font Regular"
+font-family-bold = "JetBrainsMono Nerd Font Bold"
+font-family-italic = "JetBrainsMono Nerd Font Italic"
+font-family-bold-italic = "JetBrainsMono Nerd Font Bold Italic"
+
+theme = "Adventure"
+
+cursor-style = bar
+adjust-cursor-thickness = 3
+cursor-style-blink = true
+shell-integration-features = no-cursor
+
+mouse-hide-while-typing = true
+
+background-opacity = 0.9
+background-blur-radius = 15
+
+# window-padding-x = 10
+window-padding-y = 5
+window-padding-balance = true
+
+window-inherit-working-directory = true
+
+macos-titlebar-style = tabs
+window-save-state = always
+quit-after-last-window-closed = true
+
+clipboard-write = allow
+clipboard-read = allow
+clipboard-trim-trailing-spaces = true
+clipboard-paste-protection = true
+
