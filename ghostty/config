@@ -21,9 +21,10 @@ window-padding-balance = true
 
 window-inherit-working-directory = true
 
-macos-titlebar-style = tabs
+macos-titlebar-style = hidden
 window-save-state = always
 quit-after-last-window-closed = true
+title = " "
 
 clipboard-write = allow
 clipboard-read = allow
