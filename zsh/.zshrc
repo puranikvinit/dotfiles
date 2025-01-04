@@ -88,6 +88,26 @@ source $ZSH/oh-my-zsh.sh
 export EDITOR="nvim"
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=243'
 
+#vi-mode
+bindkey -v
+export KEYTIMEOUT=1
+
+autoload edit-command-line; zle -N edit-command-line
+bindkey '^v' edit-command-line
+
+# Change cursor shape for different vi modes.
+function zle-keymap-select {
+  if [[ ${KEYMAP} == vicmd ]] ||
+     [[ $1 = 'block' ]]; then
+    echo -ne '\e[1 q'
+  elif [[ ${KEYMAP} == main ]] ||
+       [[ ${KEYMAP} == viins ]] ||
+       [[ ${KEYMAP} = '' ]] ||
+       [[ $1 = 'beam' ]]; then
+    echo -ne '\e[5 q'
+  fi
+}
+zle -N zle-keymap-select
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -121,4 +141,5 @@ alias hls="\ls -AG ~"
 alias kssh="kitty +kitten ssh"
 alias gssh="TERM=xterm ssh"
 
+alias asc="nvim ~/.config/aerospace/aerospace.toml"
 neofetch
