@@ -81,6 +81,16 @@ vim.api.nvim_create_autocmd("VimEnter", {
 	callback = function()
 		if vim.fn.argc() == 0 then
 			vim.cmd("Dashboard")
+		else
+			local first_arg = tostring(vim.fn.argv(0))
+			if vim.fn.isdirectory(first_arg) == 1 then
+				vim.cmd("cd " .. first_arg)
+				vim.cmd("Dashboard")
+			else
+				local parent_dir = vim.fn.fnamemodify(first_arg, ":h:cd")
+				vim.cmd("e " .. first_arg)
+				vim.cmd("cd " .. parent_dir)
+			end
 		end
 	end,
 })
